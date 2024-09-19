@@ -1,7 +1,93 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        
-        <h1>Login</h1>
-    </body>
-</html>
+{%load static%}
+<!DOCTYPE html><html lang="nl" class="roze"><head>
+	<meta charset="UTF-8">
+	<title>Inloggen | Somtoday huiswerk planner </title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+	<meta name="apple-mobile-web-app-title" content="Somtoday">
+	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="images/favicon-192x192.png" sizes="192x192?v=zXbBXgwmA5">
+	<link rel="icon" type="image/png" href="images/favicon-160x160.png" sizes="160x160?v=zXbBXgwmA5">
+	<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96?v=zXbBXgwmA5">
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16?v=zXbBXgwmA5">
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32?v=zXbBXgwmA5">
+	<meta name="msapplication-TileColor" content="ffc40d">
+	<meta name="msapplication-TileImage" content="mstile-144x144.png?v=zXbBXgwmA5">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/main-ver-477A0730DA01E81ECE5B2CD6416B6980.css'%}">
+</head>
+<body class="stpanel authenticator">
+	<section class="roze">
+		<div class="left-content">
+			
+	<div id="logo" data-pod="prod-authenticator-7d66cdc658-hnn8m">
+		<figure class="figurelogo"></figure>
+	</div>
+
+			
+		
+	<div class="form--holder">
+		<form id="signInForm" method="post" action="./?0-1.-panel-signInForm&amp;auth=eyJ4NXQjUzI1NiI6IkdpZ295b0kyZXcxQS00TDUweGoyWGlPdXIxdE9BMFo3M05mYmZuQXFkU3ciLCJraWQiOiJpcmlkaXVtaWRwLTE2NjgzMzc3ODYzMTA4ODY0NzQwNTkwOTk4NzcyNDAzMjI1MTM0NSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJhdXRoVGltZSI6IjIwMjQtMDktMTlUMTk6NTA6NTIuNjg5NTE2NzE4WiIsIm1ldGhvZCI6InB3ZCIsImV4cCI6MTcyNjc3OTA1MiwicGFyYW1ldGVycyI6eyJ0ZW5hbnRfdXVpZCI6IjE4ZDQ1ZmE3LTE2ZTQtNDMzNC1hNmE2LTBiOTYzM2EyNzk4YiJ9fQ.ZCDLrjUg313DttNTWoho2H_5kCLpeXkjrRtuQTn1z9P_ISEtf02Z59KF518sx1_JidTVdXTPuKqSExD3qIHj8D4eXHGGYW8KZWC4z7Kh2xr73MI21wbNN1t6kOOy31LooR3nOG5jfVeHRkM1phpRsnn0V0CiAL8YF-P8ABjQseThMBIAD2IzBvBrRQm5E85yLMfIIejvAktM8qhE4Z9PFzSjfddc2oxVvykNPftdI9cKNCiKkNDBG4C5E7z6dvDS_1d1hlPTrgix3-2VbUrvLanufmwjVBsqe00mKX1S_YpO83NtI2YRfZ7ZL3B3M9gzQumUDtpzVvXHr8TD9tT1VA"><div id="signInForm_hf_0" hidden="" class="hidden-fields"></div><div hidden="" class="hidden-fields"><input type="text" tabindex="-1" autocomplete="off"><input id="signInForm_hf_1" type="submit" tabindex="-1" name="loginLink"></div>
+			<h1>
+				Inloggen
+			</h1>
+			<div class="form--input state-disabled" tabindex="0" id="id6" aria-label="Geselecteerde school: Hondsrug College">
+				<input type="text" id="organisatieInput" value="Hondsrug College" name="organisatie" disabled="disabled">
+				<div tabindex="0" aria-label="Schoolselectie leegmaken" role="button" aria-pressed="false" class="round-focusable" id="id1" onkeypress="if(event.keyCode === 13) {document.getElementById('id1').click();}"><i class="icon-remove pointer"></i></div>
+			</div>
+			<div class="form--input" id="id7">
+		
+				<input type="text" id="usernameField" autocapitalize="none" value="" name="usernameFieldPanel:usernameFieldPanel_body:usernameField" placeholder="Gebruikersnaam">
+				<div id="id3"></div>
+			
+	    <div id="id8">
+  
+</div>
+	</div>
+			<div class="form--input" id="id9">
+		
+				<input type="password" id="passwordField" value="" name="passwordFieldPanel:passwordFieldPanel_body:passwordField" placeholder="Wachtwoord">
+			
+	    <div id="ida">
+  
+</div>
+	</div>
+			<label class="form--checkbox checkbox-label" tabindex="0" role="checkbox" aria-checked="false" id="id2" onkeypress="if(event.keyCode === 13) {document.getElementById('id2').click();}"> <input type="checkbox" name="rememberUsername" id="id4" tabindex="-1"><i></i>
+				Onthoud mijn gebruikersnaam
+			</label>
+			<div class="form--note-error" id="idb">
+  
+</div>
+			<div class="stpanel--buttons">
+				<a type="submit" class="button--stpanel primary-button" id="id5" href="#"><span>Inloggen</span></a>
+				
+			</div>
+			<ul class="stpanel--links">
+				<li>
+					<a id="idc" href="./?0-1.-panel-signInForm-wachtwoordVergeten&amp;auth=eyJ4NXQjUzI1NiI6IkdpZ295b0kyZXcxQS00TDUweGoyWGlPdXIxdE9BMFo3M05mYmZuQXFkU3ciLCJraWQiOiJpcmlkaXVtaWRwLTE2NjgzMzc3ODYzMTA4ODY0NzQwNTkwOTk4NzcyNDAzMjI1MTM0NSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJhdXRoVGltZSI6IjIwMjQtMDktMTlUMTk6NTA6NTIuNjg5NTE2NzE4WiIsIm1ldGhvZCI6InB3ZCIsImV4cCI6MTcyNjc3OTA1MiwicGFyYW1ldGVycyI6eyJ0ZW5hbnRfdXVpZCI6IjE4ZDQ1ZmE3LTE2ZTQtNDMzNC1hNmE2LTBiOTYzM2EyNzk4YiJ9fQ.ZCDLrjUg313DttNTWoho2H_5kCLpeXkjrRtuQTn1z9P_ISEtf02Z59KF518sx1_JidTVdXTPuKqSExD3qIHj8D4eXHGGYW8KZWC4z7Kh2xr73MI21wbNN1t6kOOy31LooR3nOG5jfVeHRkM1phpRsnn0V0CiAL8YF-P8ABjQseThMBIAD2IzBvBrRQm5E85yLMfIIejvAktM8qhE4Z9PFzSjfddc2oxVvykNPftdI9cKNCiKkNDBG4C5E7z6dvDS_1d1hlPTrgix3-2VbUrvLanufmwjVBsqe00mKX1S_YpO83NtI2YRfZ7ZL3B3M9gzQumUDtpzVvXHr8TD9tT1VA"><span>Wachtwoord vergeten?</span></a>
+				</li>
+			</ul>
+			
+		</form>
+	</div>
+
+	
+		</div>
+	</section>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" data-cf-beacon="{" rayid":"8c5c1b9d39ba66af","servertiming":{"name":{"cfextpri":true,"cfl4":true}},"version":"2024.8.0","token":"731646cca86f49ccb215c79dc7c6ab38"}"="" crossorigin="anonymous"></script>
+
+<script>
+/*<![CDATA[*/
+
+	function embRand(e,t){return Math.floor(Math.random()*(t-e+1))+e}function isChristmas(){const e=new Date;var t=new Date(e.getFullYear(),11,1),n=new Date(e.getFullYear(),11,31);return e>=t&&e<=n}document.addEventListener("DOMContentLoaded",function(){if(isChristmas()){let e=document.getElementById("embedim--snow"),t=".embedim-snow{position: absolute;width: 10px;height: 10px;background: white;border-radius: 50%;margin-top:-10px}",n="",i=0,o=0,a=0,d=0,m=0;if(!e){for(i=1;i<200;i++)n+='<i class="embedim-snow"></i>',o=1e-4*embRand(0,1e6),a=1e-4*embRand(-1e5,1e5),d=(10*embRand(3,8)).toFixed(2),m=(1e-4*embRand(0,1e4)).toFixed(2),t+=".embedim-snow:nth-child("+i+"){opacity:"+(1e-4*embRand(1,1e4)).toFixed(2)+";transform:translate("+o.toFixed(2)+"vw,-10px) scale("+m+");animation:fall-"+i+" "+embRand(10,30)+"s -"+embRand(0,30)+"s linear infinite}@keyframes fall-"+i+"{"+d+"%{transform:translate("+(o+a).toFixed(2)+"vw,"+d+"vh) scale("+m+")}to{transform:translate("+(o+a/2).toFixed(2)+"vw, 105vh) scale("+m+")}}";e=document.createElement("div"),e.id="embedim--snow",e.innerHTML="<style>#embedim--snow{position:fixed;left:0;top:0;bottom:0;width:100vw;height:100vh;overflow:hidden;z-index:100;pointer-events:none}"+t+"</style>"+n,document.body.appendChild(e)}}});
+
+/*]]>*/
+</script>
+
+</body></html>
