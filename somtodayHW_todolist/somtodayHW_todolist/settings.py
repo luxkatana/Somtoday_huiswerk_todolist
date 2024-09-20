@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'somtodayhw_api.apps.SomtodayhwApiConfig',
-    'todoapp.apps.TodoappConfig'
+    'api.apps.ApiConfig',
+    'HTMLserve.apps.HtmlserveConfig'
 ]
 
 MIDDLEWARE = [
