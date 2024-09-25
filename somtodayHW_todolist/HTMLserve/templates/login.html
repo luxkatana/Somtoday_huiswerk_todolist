@@ -38,7 +38,8 @@
 
 			<div class="form--holder">
 				<form id="signInForm" method="post"
-					action="./?0-1.-panel-signInForm&amp;auth=eyJ4NXQjUzI1NiI6IkdpZ295b0kyZXcxQS00TDUweGoyWGlPdXIxdE9BMFo3M05mYmZuQXFkU3ciLCJraWQiOiJpcmlkaXVtaWRwLTE2NjgzMzc3ODYzMTA4ODY0NzQwNTkwOTk4NzcyNDAzMjI1MTM0NSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJhdXRoVGltZSI6IjIwMjQtMDktMTlUMTk6NTA6NTIuNjg5NTE2NzE4WiIsIm1ldGhvZCI6InB3ZCIsImV4cCI6MTcyNjc3OTA1MiwicGFyYW1ldGVycyI6eyJ0ZW5hbnRfdXVpZCI6IjE4ZDQ1ZmE3LTE2ZTQtNDMzNC1hNmE2LTBiOTYzM2EyNzk4YiJ9fQ.ZCDLrjUg313DttNTWoho2H_5kCLpeXkjrRtuQTn1z9P_ISEtf02Z59KF518sx1_JidTVdXTPuKqSExD3qIHj8D4eXHGGYW8KZWC4z7Kh2xr73MI21wbNN1t6kOOy31LooR3nOG5jfVeHRkM1phpRsnn0V0CiAL8YF-P8ABjQseThMBIAD2IzBvBrRQm5E85yLMfIIejvAktM8qhE4Z9PFzSjfddc2oxVvykNPftdI9cKNCiKkNDBG4C5E7z6dvDS_1d1hlPTrgix3-2VbUrvLanufmwjVBsqe00mKX1S_YpO83NtI2YRfZ7ZL3B3M9gzQumUDtpzVvXHr8TD9tT1VA">
+					action="/api/authenticate">
+				 	{%csrf_token%}
 					<div id="signInForm_hf_0" hidden="" class="hidden-fields"></div>
 					<div hidden="" class="hidden-fields"><input type="text" tabindex="-1" autocomplete="off"><input
 							id="signInForm_hf_1" type="submit" tabindex="-1" name="loginLink"></div>
@@ -53,7 +54,7 @@
 					<div class="form--input" id="id7">
 
 						<input type="text" id="usernameField" autocapitalize="none" value=""
-							name="usernameFieldPanel:usernameFieldPanel_body:usernameField"
+							name="username"
 							placeholder="Gebruikersnaam">
 						<div id="id3"></div>
 
@@ -64,7 +65,7 @@
 					<div class="form--input" id="id9">
 
 						<input type="password" id="passwordField" value=""
-							name="passwordFieldPanel:passwordFieldPanel_body:passwordField" placeholder="Wachtwoord">
+							name="password" placeholder="Wachtwoord">
 
 						<div id="ida">
 

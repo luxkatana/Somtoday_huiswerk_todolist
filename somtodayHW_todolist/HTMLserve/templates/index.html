@@ -21,7 +21,12 @@
         {%for todo in todos%}
 
         <tr id="{{todo.pk}}">
-            <td id="{{todo.pk}}-state">{%if todo.af%}Af {%else%} Niet af{%endif%} </td>
+            <td id="{{todo.pk}}-state" bgcolor="{%if todo.af%} lightgreen {%else%} darkred {%endif%}">
+                {%if todo.af%}
+                Af
+                {%else%}
+                Niet af
+                {%endif%} </td>
             <td>{{todo.text}}</td>
             <td id="{{todo.pk}}-switch">
                 {%if todo.af%}
@@ -61,7 +66,7 @@
             document.getElementById(`${id}-state`).innerHTML = to === true? "Af":  "Niet af";
             var switch_id = document.getElementById(`${id}-switch`);
             switch_id.children[0].setAttribute("onClick", `changeTo(${id}, ${!to})`);
-            switch_id.children[0].innerHTML = to === true? "Veranderen naar niet af ": "Veranderen naar af";
+            switch_id.children[0].innerHTML = to === true? "Veranderen naar niet af ": "Veranderen naar Af";
             
             fetch(`/api/todo/${id}/`, {
                 method: 'PATCH',
@@ -76,10 +81,6 @@
                     return
                 }
                 document.getElementById(`${id}-state`).textContent = to == true? "Af":  "Niet af";
-                var NewButton = document.createElement("BUTTON"); 
-                NewButton.onclick(id, !to);
-                document.getElementById(`${id}-switch`) = NewButton;
-                alert(`Verandert id: ${id} state naar ${to}`);
                 
             });
 
