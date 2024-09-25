@@ -1,19 +1,11 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse
-
-class TestTodo:
-    def __init__(self, todo_id: int, text: str, current_state: bool=False):
-        self.id = todo_id
-        self.text = text
-        self.af = current_state
+from api.models import Todo
 
 # Create your views here. 
 def index(request: HttpRequest) -> HttpResponse:
-    todos = [
-        TestTodo(1, "Test 1", False),
-        TestTodo(2, "Test 2", False),
-        TestTodo(3, "Test 3", True),
-    ]
+    todos = Todo.objects.filter(owner=request.user).all()
+    
     return render(request, "index.html", {'todos': todos})
     # return redirect("/login")
 

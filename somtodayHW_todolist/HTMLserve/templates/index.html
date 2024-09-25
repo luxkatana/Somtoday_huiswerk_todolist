@@ -20,14 +20,14 @@
         </tr>
         {%for todo in todos%}
 
-        <tr id="{{todo.id}}">
-            <td id="{{todo.id}}-state">{%if todo.af%}Af {%else%} Niet af{%endif%} </td>
+        <tr id="{{todo.pk}}">
+            <td id="{{todo.pk}}-state">{%if todo.af%}Af {%else%} Niet af{%endif%} </td>
             <td>{{todo.text}}</td>
-            <td id="{{todo.id}}-switch">
+            <td id="{{todo.pk}}-switch">
                 {%if todo.af%}
-                <button onclick='changeTo({{todo.id}}, false)'> Veranderen naar niet af</button>
+                <button onclick='changeTo({{todo.pk}}, false)'> Veranderen naar niet af</button>
                 {%else%}
-                <button onclick='changeTo({{todo.id}}, true)'>Veranderen naar Af</button>
+                <button onclick='changeTo({{todo.pk}}, true)'>Veranderen naar Af</button>
                 {%endif%}
 
             </td>
