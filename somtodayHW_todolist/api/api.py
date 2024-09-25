@@ -12,4 +12,4 @@ class TodoViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         return Todo.objects.filter(owner = self.request.user).all()
 
-r.register('todo', TodoViewSet, 'Todo')
+r.register('todo', TodoViewSet, 'todo')
