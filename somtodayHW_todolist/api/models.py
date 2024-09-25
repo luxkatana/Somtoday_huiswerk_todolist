@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 class Todo(models.Model):
     text = models.TextField()
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    checked = models.BooleanField()
 
     def __str__(self):
         return f"({self.owner.username}) {self.text}"
