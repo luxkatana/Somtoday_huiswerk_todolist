@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border:1px solid black;
+            }
+        </style>
+    </head>
+
+
+<body>
+    <table style="width: 100%">
+        <tr>
+
+            <th>Status</th>
+            <th>Tekst</th>
+            <th>Verandering</th>
+        </tr>
+        {%for todo in todos%}
+
+        <tr>
+            <td>{%if todo.af%}Af {%else%} Niet af{%endif%} </td>
+            <td>{{todo.text}}</td>
+            <td>
+                {%if todo.af%}
+                <button onclick='changeTo({{todo.id}}, false)'> Veranderen naar niet af</button>
+                {%else%}
+                <button onclick='changeTo({{todo.id}}, true)'>Veranderen naar Af</button>
+                {%endif%}
+
+            </td>
+
+        </tr>
+
+            {%endfor%}
+
+    </table>
+    </body>
+    <script>
+        function changeTo(id, to) {
+            if (to === true) {
+                // Veranderen naar af
+                alert(`Veranderen naar af id: ${id}`);
+            }
+            else {
+                // Veranderen naar niet af
+                alert(`Veranderen naar niet af id: ${id}`);
+            }
+        }
+        </script>
+</html>
