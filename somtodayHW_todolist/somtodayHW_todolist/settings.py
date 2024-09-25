@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
-    'HTMLserve.apps.HtmlserveConfig'
+    'HTMLserve.apps.HtmlserveConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
