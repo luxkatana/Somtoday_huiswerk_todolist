@@ -45,12 +45,12 @@
             switch_id.children[0].setAttribute("onClick", `changeTo(${id}, ${!to})`);
             switch_id.children[0].innerHTML = to === true? "Veranderen naar niet af ": "Veranderen naar af";
             
-            fetch("/api/todo", {
+            fetch(`/api/todo/${id}/`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({pk: id, af: to})
+                body: JSON.stringify({af: to})
             }).then(response => {
                 if (!response.ok) {
                     alert("Something went wrong.");
