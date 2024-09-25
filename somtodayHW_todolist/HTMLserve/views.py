@@ -13,4 +13,6 @@ def index(request: HttpRequest) -> HttpResponse:
 
 
 def login(request: HttpRequest) -> HttpResponse:
+    if request.user.id is not None:
+        return redirect("/")
     return render(request, "login.html")
